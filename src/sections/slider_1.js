@@ -11,7 +11,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import Container from '@mui/material/Container';
 
-const AutoPlaySwipeableViews = SwipeableViews;//autoPlay(SwipeableViews);
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images1 = [
   {
