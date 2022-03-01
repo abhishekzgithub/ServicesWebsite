@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import Image from 'next/image'
 import { Grid } from '@mui/material';
-import crawlx from "../../public/crawlx-service.jpg"
+import crawlx from "/public/crawlx-service.jpg"
 
 const servicesList=["Pest Control","Sanitization",
                     "House Cleaning", "Painting services",
