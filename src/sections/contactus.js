@@ -50,26 +50,25 @@ function ContactUs(){
           </Typography>
           <Typography>
             
-            Plot No. 11, 3rd Floor DDA Community Center,
-            Okhla Phase 1, Behind Hotel Crowne Plaza, New Delhi 110020.
+            Patna, Bihar, 801503.
           </Typography>
           <Typography>
             Email Id
           </Typography>
           <Typography>
-            customercare@terminixsisindia.com
+            customercare@abc.com
           </Typography>
           <Typography>
             Phone No
           </Typography>
           <Typography>
-            1800-102-4949 ( 9 AM to 6 PM )
+            1800-xxx-xxx ( 9 AM to 6 PM )
           </Typography>
           <Typography>
             If you are still not satisfied, please contact our top management at 
           </Typography>
           <Typography>
-            countryhead@terminixsisindia.com
+            countryhead@abc.com
           </Typography>
 
         </Box>

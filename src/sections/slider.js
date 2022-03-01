@@ -10,6 +10,8 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import Container from '@mui/material/Container';
+import { makeStyles } from "@material-ui/core/styles";
+import { positions } from '@mui/system';
 
 const AutoPlaySwipeableViews = SwipeableViews;//autoPlay(SwipeableViews);
 
@@ -103,25 +105,53 @@ function SwipeableTextMobileStepper() {
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
-
   return (
     <Container maxWidth="md">
-    <Box
-      sx={{ maxWidth: 1400, flexGrow: 1 }}
+    <Paper
+      elevation={3}
+      sx={{ 
+        flexGrow: 1 }}
       >
-      <Paper
+      <Box
         square
         elevation={1}
         sx={{
           display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'black',//'background.default',
+          //flexGrow:'inherit',
+          //flexShrink:'inherit',
+          flexDirection:"column",
+          alignItems:"center",
+          alignContent:"space-between",
+          height: 120,
+          backgroundColor: "transparent",
+          position: "absolute",
+          zIndex: 3000,
+          top: 400,
+          left: { xs: '50', md: '350' },
+          //border:"solid blue",
+          
         }}
-      >
-      <Typography color='white'>{images[activeStep].label}</Typography>
-      </Paper>
+        >
+          <Typography color='black' variant="h5" >{images[activeStep].label}</Typography>
+          <Button
+                variant="button"
+                sx={{
+                  //color: "black",
+                  backgroundColor:'primary',
+                  //border:"solid",
+                  flex:1,
+                  alignItems:"center",
+
+                }}
+                onClick={()=>{alert(`hello`)}}
+              >
+                <Typography color='white' 
+                  variant="h5"
+                  >
+                    {"Schedule a Free Site Inspection"}
+                  </Typography>
+              </Button>
+      </Box>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -178,7 +208,7 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
       />
-    </Box>
+    </Paper>
     </Container>
   );
 }

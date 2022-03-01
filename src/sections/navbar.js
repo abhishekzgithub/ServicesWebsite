@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useRouter } from 'next/router'
 
-const pages = ['Products', 'Pricing', 'Servcies', 'ContactUs'];
+const pages = ['Products', 'Pricing', 'Services', 'ContactUs'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -52,7 +52,7 @@ const ResponsiveAppBar = () => {
           disableGutters
           sx={{
             bgcolor:"inherit",
-            border: "solid",
+            //border: "solid",
           }}
           >
           {/* -- for normal web */}

@@ -5,7 +5,7 @@ import Navbar from '../src/sections/navbar';
 import Footer from '../src/components/footer/footer'
 
 import Section1 from '../src/sections/section1';
-import Section2 from '../src/sections/slider';
+import Slider from '../src/sections/slider';
 // import Section3 from '../src/sections/section3';
 // import Section4 from '../src/sections/section4';
 // import Section5 from '../src/sections/section5';
@@ -26,9 +26,9 @@ export default function Home() {
 
       <main>
       <Navbar/>
-      <Section2/>
-      {/* <OurSolution/>
-      <Contactus/> */}
+      <Slider/>
+      <OurSolution/>
+      <Contactus/>
       {/* <Section1/> */}
         {/* <Header/>
         
@@ -45,9 +45,9 @@ export default function Home() {
         
       </main>
 
-      {/* <footer>
+      <footer>
         <Footer/>
-      </footer> */}
+      </footer>
 
     </div>
   )
