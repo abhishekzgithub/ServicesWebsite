@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import Image from 'next/image'
 import { Grid } from '@mui/material';
-import crawlx from "/public/crawlx-service.jpg"
+import crawlx from "/public/images/crawlx-service.jpg"
 
 const servicesList=["Pest Control","Sanitization",
                     "House Cleaning", "Painting services",
@@ -24,10 +24,10 @@ const redirectToService=(data)=>{
 function OurSolution (){
     return (
       
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Typography p={2}
               >
-                OUR SERVICES
+                Pest Control Services in Noida
             </Typography>
           <Grid container spacing={20}>
             <Grid item container alignItems="center" >
@@ -53,7 +53,7 @@ function OurSolution (){
                       </CardMedia>
                       <CardActions>
                           <Box p={1}>
-                            <Button size="small" color="primary">
+                            <Button size="medium" color="primary">
                             <Typography>
                               {serviceListitem}
                             </Typography>

@@ -6,7 +6,6 @@ import OurSolution from '../src/sections/oursolutions';
 import Contactus from '../src/sections/contactus';
 
 
-
 export default function Home() {
   return (
     <div className="container">
